@@ -19,7 +19,7 @@ export default {
     ];
 
     const GITHUB_TOKEN = env.GITHUB_TOKEN;
-    const WAIT_TIME = 60 * 60 * 1000; // 60分钟的毫秒数
+    const WAIT_TIME = 60 * 60 * 1000 * 24; // 60分钟的毫秒数
 
     // 2. 并行处理所有监控任务
     const results = await Promise.allSettled(
